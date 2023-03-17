@@ -1,0 +1,65 @@
+/* .logo-landing{
+  animation-duration: 0.5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+} */
+
+
+@keyframes slidein {
+  from {
+    transform: scale(0.95);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+button{
+  font-family: 'Kanit', sans-serif !important;
+  cursor: pointer;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 40px;
+  position: relative;
+}
+
+.entrar{
+  background: #802599 !important;
+  color: #ffffff;
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+.ingresar {
+  /* 
+    background-image: url("../../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }

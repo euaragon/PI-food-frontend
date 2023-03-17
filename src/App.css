@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700;800&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+}
+
+h1::selection, h2::selection, h3::selection, h4::selection, p::selection, span::selection, li::selection, div::selection, a::selection, b::selection{
+  background-color: #ee4800;
+  color: #fff;
+}
+

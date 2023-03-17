@@ -1,0 +1,110 @@
+.food-create{
+    margin-top: 160px;
+    font-weight: 200;
+    padding: 0 150px;
+    display: block;
+}
+
+.food-create button {
+    color: #fff;
+    font-size: 10pt;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.food-create input{
+    font-weight: 100;
+    border: none;
+    border-radius: 40px;
+    background: #e8e8e8;
+    padding: 3px 10px;
+    margin-right: 10px;
+}
+
+.food-create span {
+    color: red;
+    font-size: 8pt;
+    margin-right: 20px;
+}
+
+.food-create label{
+    font-size: 10pt;
+    font-weight: 400;
+    margin: 0 20px;
+}
+
+.form {
+   min-height: 660px;
+   width: 40%;
+    margin: 0 auto;
+}
+
+.options {
+    margin: 10px 0;
+    display: inline-flex;
+}
+
+.instructions{
+    height: 100px;
+}
+
+.create-alert {
+    border-radius: 30px;
+    font-size: 10pt;
+    font-weight: 400;
+	animation: tiendaNew 2.72s ease infinite;
+	transform-origin: 50% 50%;
+	-webkit-transition: 0.5s ease-out;
+	-moz-transition: 0.5s ease-out;
+	-o-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
+	display: block;
+  }
+
+  .create-alert.error {
+    color: #dc3545;
+    border: 1px solid #dc3545;
+  }
+ 
+  .create-alert.success{
+    color: #1b831f;
+    border: 1px solid #1b831f;
+  }
+  .create-alert button{
+    margin-left: 20px;
+    border-radius: 100%;
+    background-color: #353535;
+    text-align: center;
+
+  }
+  
+  
+  .food-create a {
+    cursor: pointer;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 40px;
+    position: relative;
+        background: #802599 !important;
+        color: #ffffff;
+        font-size: 14pt;
+        font-weight: bold;
+        text-align: center;
+        top: 30px;
+      }
+
+      .food-create a:hover{
+        opacity: 0.9;
+      }
+
+
+      @keyframes tiendaNew{
+        0% { transform:translate(0,0) }
+        4.41177% { transform:translate(5px,0) }
+        8.82353% { transform:translate(0,0) }
+        13.23529% { transform:translate(5px,0) }
+        17.64706% { transform:translate(0,0) }
+        22.05882% { transform:translate(5px,0) }
+        26.47059% { transform:translate(0,0) }
+        100% { transform:translate(0,0) }
+    }
