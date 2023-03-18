@@ -5,7 +5,10 @@ import Home from "./components/Home";
 import FoodCreate from "./components/FoodCreate"
 import Nav from './components/Nav';
 import Detail from './components/Detail'
+import axios from 'axios'
 
+// axios.defaults.baseURL = 'http://localhost:3001';
+axios.defaults.baseURL = 'https://pi-food-back-production-ec1c.up.railway.app/';
 
 function App() {
   const location = useLocation()
