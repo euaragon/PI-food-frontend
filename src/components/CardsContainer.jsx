@@ -27,7 +27,7 @@ export default function CardsContainer() {
   const [filter, setFilter] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/diets/")
+    fetch("/diets/")
       .then((response) => response.json())
       .then((data) => {
         data.sort((a, b) => {

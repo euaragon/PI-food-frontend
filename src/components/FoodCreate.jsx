@@ -17,7 +17,7 @@ export default function FoodCreate() {
   async function createRecipe(userData) {
     try {
       await fetch(
-        "http://localhost:3001/recipes",
+        "/recipes",
         {
           method: "POST",
           headers: {
