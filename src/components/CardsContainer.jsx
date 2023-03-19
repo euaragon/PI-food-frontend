@@ -27,7 +27,7 @@ export default function CardsContainer() {
   const [filter, setFilter] = useState([]);
 
   useEffect(() => {
-    fetch("/diets/")
+    fetch("https://pi-food-back-production-97f8.up.railway.app/diets/")
       .then((response) => response.json())
       .then((data) => {
         data.sort((a, b) => {
