@@ -18,16 +18,16 @@ export default function Detail() {
 
   const navigate = useNavigate();
 
-  const { id } = useParams();
+  const { recipeId } = useParams();
 
   useEffect(() => {
-    fetch(`/recipes/${id}`)
+    fetch(`/recipes/${recipeId}`)
       .then((response) => response.json())
       .then((data) => {
         setRecipe(data);
       })
       .catch((error) => window.alert("Algo salio mal, intentalo nuevamente"));
-  }, [id]);
+  }, [recipeId]);
 
   function goHome() {
     return navigate("/home");
