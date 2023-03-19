@@ -47,10 +47,10 @@ export function orderByName(payload){
     }
 }
 
-export function getDetail(id){
+export function getDetail(recipeId){
     return async function(dispatch){
         try {
-            var json = await axios.get(`/recipes/${id}`);
+            var json = await axios.get(`/recipes/${recipeId}`);
             return dispatch({
                 type: GET_DETAILS,
                 payload:json.data

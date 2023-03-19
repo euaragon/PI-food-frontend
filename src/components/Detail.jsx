@@ -21,7 +21,7 @@ export default function Detail() {
   const { recipeId } = useParams();
 
   useEffect(() => {
-    fetch(`/recipes/${recipeId}`)
+    fetch(`https://pi-food-back-production-97f8.up.railway.app/recipes/${recipeId}`)
       .then((response) => response.json())
       .then((data) => {
         setRecipe(data);
